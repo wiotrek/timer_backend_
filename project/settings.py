@@ -11,13 +11,14 @@ ALLOWED_HOSTS = [
     'api-timer-backend.herokuapp.com',
     'localhost:4200',
     '127.0.0.1',
+    'wiotrek.github.io'
 ]
 
-CORS_ALLOWED_ORIGINS = [
-    "http://localhost:4200",
-    "http://127.0.0.1",
-    "https://api-timer-backend.herokuapp.com",
-]
+CORS_ORIGIN_WHITELIST = (
+    'http://localhost:4200',
+    'https://api-timer-backend.herokuapp.com',
+    'https://wiotrek.github.io',
+)
 
 # Application definition
 
